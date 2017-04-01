@@ -23,7 +23,6 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
 
     @Override
     public StudentViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.student_item, parent, false);
         return new StudentViewHolder(itemView);
     }
@@ -31,15 +30,13 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
     @Override
     public void onBindViewHolder(StudentViewHolder holder, int position) {
         StudentsModel studentsModel = data.get(position);
-        holder.studentName.setText(studentsModel.getStudentName());
-        holder.marksEnglish.setText(studentsModel.getMarksEnglish());
-        holder.marksHindi.setText(studentsModel.getMarksHindi());
-        holder.marksRegional.setText(studentsModel.getMarksRegional());
-        holder.marksMaths.setText(studentsModel.getMarksMaths());
-        holder.marksScience.setText(studentsModel.getMarksScience());
-        holder.marksSocial.setText(studentsModel.getMarksSocial());
-        holder.marksTotal.setText(studentsModel.getMarksTotal());
-        holder.marksAvg.setText(studentsModel.getMarksAvg());
+        holder.studentName.setText(studentsModel.getStud_name());
+        holder.marksEnglish.setText(studentsModel.getStud_sub3());
+        holder.marksHindi.setText(studentsModel.getStud_sub2());
+        holder.marksRegional.setText(studentsModel.getStud_sub1());
+        holder.marksMaths.setText(studentsModel.getStud_sub4());
+        holder.marksScience.setText(studentsModel.getStud_sub5());
+        holder.marksAvg.setText(studentsModel.getStud_avg());
     }
 
     @Override
@@ -47,9 +44,10 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
         return data.size();
     }
 
+
     public static class StudentViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView studentName, marksEnglish, marksHindi, marksRegional, marksMaths, marksScience, marksSocial, marksTotal, marksAvg;
+        private TextView studentName, marksEnglish, marksHindi, marksRegional, marksMaths, marksScience, marksAvg;
 
         public StudentViewHolder(View itemView) {
             super(itemView);
@@ -59,8 +57,6 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
             marksRegional = (TextView) itemView.findViewById(R.id.tvSubRegional);
             marksMaths = (TextView) itemView.findViewById(R.id.tvSubMaths);
             marksScience = (TextView) itemView.findViewById(R.id.tvSubScience);
-            marksSocial = (TextView) itemView.findViewById(R.id.tvSubSocial);
-            marksTotal = (TextView) itemView.findViewById(R.id.tvTotal);
             marksAvg = (TextView) itemView.findViewById(R.id.tvAvg);
         }
     }

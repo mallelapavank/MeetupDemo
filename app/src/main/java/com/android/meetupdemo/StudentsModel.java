@@ -4,80 +4,74 @@ package com.android.meetupdemo;
  * Created by mokriya on 26/03/17.
  */
 
-public class StudentsModel  {
+public class StudentsModel {
 
-    private String studentName;
-    private String marksEnglish,marksHindi,marksRegional,marksMaths,marksScience,marksSocial,marksTotal,marksAvg;
 
-    public String getStudentName() {
-        return studentName;
+    public String stud_avg, stud_name, stud_sub4, stud_sub3, stud_sub2, stud_sub1, stud_sub5;
+    public String roll_no;
+
+    public String getStud_avg() {
+        return stud_avg;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
+    public void setStud_avg(String stud_avg) {
+        this.stud_avg = stud_avg;
     }
 
-    public String getMarksEnglish() {
-        return marksEnglish;
+    public String getStud_name() {
+        return stud_name;
     }
 
-    public void setMarksEnglish(String marksEnglish) {
-        this.marksEnglish = marksEnglish;
+    public void setStud_name(String stud_name) {
+        this.stud_name = stud_name;
     }
 
-    public String getMarksHindi() {
-        return marksHindi;
+    public String getStud_sub4() {
+        return stud_sub4;
     }
 
-    public void setMarksHindi(String marksHindi) {
-        this.marksHindi = marksHindi;
+    public void setStud_sub4(String stud_sub4) {
+        this.stud_sub4 = stud_sub4;
     }
 
-    public String getMarksRegional() {
-        return marksRegional;
+    public String getStud_sub3() {
+        return stud_sub3;
     }
 
-    public void setMarksRegional(String marksRegional) {
-        this.marksRegional = marksRegional;
+    public void setStud_sub3(String stud_sub3) {
+        this.stud_sub3 = stud_sub3;
     }
 
-    public String getMarksMaths() {
-        return marksMaths;
+    public String getStud_sub2() {
+        return stud_sub2;
     }
 
-    public void setMarksMaths(String marksMaths) {
-        this.marksMaths = marksMaths;
+    public void setStud_sub2(String stud_sub2) {
+        this.stud_sub2 = stud_sub2;
     }
 
-    public String getMarksScience() {
-        return marksScience;
+    public String getStud_sub1() {
+        return stud_sub1;
     }
 
-    public void setMarksScience(String marksScience) {
-        this.marksScience = marksScience;
+    public void setStud_sub1(String stud_sub1) {
+        this.stud_sub1 = stud_sub1;
     }
 
-    public String getMarksSocial() {
-        return marksSocial;
+    public String getStud_sub5() {
+        return stud_sub5;
     }
 
-    public void setMarksSocial(String marksSocial) {
-        this.marksSocial = marksSocial;
+    public void setStud_sub5(String stud_sub5) {
+        this.stud_sub5 = stud_sub5;
     }
 
-    public String getMarksTotal() {
-        return marksTotal;
+    public String getRoll_no() {
+        return roll_no;
     }
 
-    public void setMarksTotal(String marksTotal) {
-        this.marksTotal = marksTotal;
+    public void setRoll_no(String roll_no) {
+        this.roll_no = roll_no;
     }
 
-    public String getMarksAvg() {
-        return marksAvg;
-    }
-
-    public void setMarksAvg(String marksAvg) {
-        this.marksAvg = marksAvg;
-    }
 }

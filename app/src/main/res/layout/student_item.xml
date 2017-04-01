@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="Example"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSubEng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvStudentName"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSubHindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSubEng"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSubRegional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSubHindi"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSubMaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSubRegional"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvSubScience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSubMaths"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvSubScience"
+        android:paddingRight="5dp"
+        android:text="25"
+        android:textSize="16sp" />
+
+</RelativeLayout>
